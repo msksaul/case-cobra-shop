@@ -54,6 +54,7 @@ const DesignPreview = ({ configuration }: {configuration: Configuration}) => {
     }
     else {
       localStorage.setItem('configurationId', id)
+      setIsLoginModalOpen(true)
     }
   }
 
