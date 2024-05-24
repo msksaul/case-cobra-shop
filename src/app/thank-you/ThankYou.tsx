@@ -24,7 +24,7 @@ const ThankYou = () => {
       <div className='w-full mt-24 flex justify-center'>
         <div className='flex flex-col items-center gap-2'>
           <Loader2 className='h-8 w-8 animate-spin text-zinc-500'/>
-          <h3 className='font-semibold text-xl'>Loading your oderd...</h3>
+          <h3 className='font-semibold text-xl'>Loading your oder...</h3>
           <p>This won't take long.</p>
         </div>
       </div>
@@ -115,7 +115,7 @@ const ThankYou = () => {
 
             <div>
               <p className='font-medium text-zinc-900'>Shipping method</p>
-              <p className='mt-2 text-zinc-700'>DHL, tajes up to 2 working days</p>
+              <p className='mt-2 text-zinc-700'>DHL, takes up to 2 working days</p>
             </div>
           </div>
         </div>
