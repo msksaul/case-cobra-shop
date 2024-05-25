@@ -20,7 +20,7 @@ export default function Home() {
                 Your Image on a <span className='bg-green-600 px-2 text-white'>Custom</span> Phone Case
               </h1>
               <p className='mt-8 text-lg lg:pr-10 max-w-prose text-center lg:text-left text-balance md:text-wrap'>
-                Capture your favorite memories with your own,
+                Capture your favorite memories with your own,{' '}
                 <span className='font-semibold'>one-of-one</span> phone case.
                 CaseCobra allows you to protect your memories, not just your phone case.
               </p>

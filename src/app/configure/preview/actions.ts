@@ -52,7 +52,6 @@ export const createCheckoutSession = async ({configId}: {configId: string}) => {
 
   const product = await stripe.products.create({
     name: 'Custom iPhone Case',
-    images: ['/snake-3.png'],
     default_price_data: {
       currency: 'USD',
       unit_amount: price
