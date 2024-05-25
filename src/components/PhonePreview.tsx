@@ -32,8 +32,8 @@ const PhonePreview = ({ croppedImageUrl, color }: {
   }, [ref])
 
   let caseBackgroundColor = 'bg-zinc-900'
-  if(color = 'blue') caseBackgroundColor = 'bg-blue-950'
-  if(color = 'rose') caseBackgroundColor = 'bg-rose-950'
+  if(color === 'blue') caseBackgroundColor = 'bg-blue-950'
+  if(color === 'rose') caseBackgroundColor = 'bg-rose-950'
 
   return (
     <AspectRatio ref={ref} ratio={3000/2001} className='relative'>
