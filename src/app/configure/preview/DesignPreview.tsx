@@ -36,7 +36,7 @@ const DesignPreview = ({ configuration }: {configuration: Configuration}) => {
   if(material==='polycarbonate') totalPrice += PRODUCT_PRICES.material.polycarbonate
   if(finish === 'textured') totalPrice += PRODUCT_PRICES.finish.textured
 
-  const { mutate: createPaymentSession } = useMutation({
+  const { mutate: createPaymentSession, isPending } = useMutation({
     mutationKey: ['get-checkout-session'],
     mutationFn: createCheckoutSession,
     onSuccess: (({url}) => {
@@ -145,7 +145,10 @@ const DesignPreview = ({ configuration }: {configuration: Configuration}) => {
             </div>
 
             <div className='mt-8 flex justify-end pb-12'>
-              <Button 
+              <Button
+                isLoading={isPending}
+                disabled={isPending}
+                loadingText='Loading' 
                 className='px-4 sm:px-6 lg:px-8'
                 onClick={() => {
                   handleCheckout()
